@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.kukamedicals.mobileapp"
+        versionCode = "10"
+        version     = "1.0.0">
+
+    <name>Kuka Medicals</name>
+
+    <description>
+        Kuka Medicals
+App for Pharmacy Wholesalers
+    </description>
+
+    <author>Tadapp</author>
+
+    <plugin name='cordova-plugin-splashscreen' />
+    <plugin name='cordova-plugin-inappbrowser' />
+    <plugin name='cordova-plugin-network-information' />
+
+    <preference name='phonegap-version' value='cli-9.0.0' />
+
+    <gap:plugin name='onesignal-cordova-plugin' spec='2.4.5' source='npm' />
+
+    <preference name='android-build-tool' value='gradle' />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name='orientation' value='portrait' />
+
+    <preference name="SplashMaintainAspectRatio" value="false" />
+    <preference name="SplashScreenSpinnerColor" value="#ffffff" />
+
+    <preference name="Fullscreen" value="false" />
+
+
+    <platform name="android">
+        <icon src="res/android/icon/1600435431_96967b883f5ad1cf416c.png" density="ldpi" />
+        <icon src="res/android/icon/1600435431_cd77ba797d4c1f3ce21e.png" density="mdpi" />
+        <icon src="res/android/icon/1600435431_0d5bfeb27d63e150d8da.png" density="hdpi" />
+        <icon src="res/android/icon/1600435431_c516f76ab999cb05a675.png" density="xhdpi" />
+        <icon src="res/android/icon/1600435431_e01ec04f17574e178101.png" density="xxhdpi" />
+        <icon src="res/android/icon/1600435431_7c8100e2f8c29d9fa2c2.png" density="xxxhdpi" />
+
+        <splash src="res/android/screen/hdpi_port_1600437406_f2c77e6dfd8b8c5d6342.png" density="port-hdpi"/>
+        <splash src="res/android/screen/ldpi_port_1600437406_f2c77e6dfd8b8c5d6342.png" density="port-ldpi"/>
+        <splash src="res/android/screen/mdpi_port_1600437406_f2c77e6dfd8b8c5d6342.png" density="port-mdpi"/>
+        <splash src="res/android/screen/xhdpi_port_1600437406_f2c77e6dfd8b8c5d6342.png" density="port-xhdpi"/>
+        <splash src="res/android/screen/hdpi_land_1600437406_f2c77e6dfd8b8c5d6342.png" density="land-hdpi"/>
+        <splash src="res/android/screen/ldpi_land_1600437406_f2c77e6dfd8b8c5d6342.png" density="land-ldpi"/>
+        <splash src="res/android/screen/mdpi_land_1600437406_f2c77e6dfd8b8c5d6342.png" density="land-mdpi"/>
+        <splash src="res/android/screen/xhdpi_land_1600437406_f2c77e6dfd8b8c5d6342.png" density="land-xhdpi"/>
+    </platform>
+
+    <access origin='*'/>
+    <plugin name='cordova-plugin-whitelist' />
+    <allow-intent href='http://*/*'/>
+    <allow-intent href='https://*/*'/>
+    <allow-intent href='tel:*'/>
+    <allow-intent href='sms:*'/>
+    <allow-intent href='mailto:*'/>
+    <allow-intent href='geo:*'/>
+
+</widget>
